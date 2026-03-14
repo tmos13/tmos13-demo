@@ -89,5 +89,5 @@ Pack manifests are the contract. The model executes. The session produces a stru
 
 ---
 
-*TMOS13, LLC · Jersey City, NJ · rob@tmos13.ai*
+*TMOS13, LLC · Jersey City, NJ · hello@tmos13.ai*
 *Two provisional patents filed February 21, 2026*
