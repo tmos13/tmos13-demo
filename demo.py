@@ -69,11 +69,12 @@ def load_packs():
 def extract_field(manifest: str, field: str) -> str:
     """Extract a field value from MANIFEST.md header block."""
     import re
-    # Match **Field:** value or Field: value patterns
+    # Normalize field name: estimated_turns → Estimated turns
+    display_field = field.replace("_", " ")
     patterns = [
-        rf'\*\*{field.title()}\*\*:\s*(.+)',
-        rf'\*\*{field}\*\*:\s*(.+)',
-        rf'^{field}:\s*(.+)',
+        rf'\*\*{re.escape(display_field)}:\*\*\s*(.+)',
+        rf'\*\*{re.escape(field)}:\*\*\s*(.+)',
+        rf'^{re.escape(display_field)}:\s*(.+)',
     ]
     for pattern in patterns:
         match = re.search(pattern, manifest, re.IGNORECASE | re.MULTILINE)
