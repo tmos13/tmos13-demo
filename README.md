@@ -69,7 +69,7 @@ That's it. No training. No fine-tuning. No prompt engineering by the operator. T
 
 This demo shows the architecture. The full TMOS13 platform includes:
 
-- **356 active packs** across 24 categories — criminal justice, diplomatic, education, consulting, creative, agriculture, and more
+- **385 active packs** across 34 categories — criminal justice, diplomatic, education, consulting, creative, agriculture, and more
 - **Dimensional Vault** — 8-angle addressed persistent memory across sessions
 - **FastAPI engine** — 54 modules, 77 endpoints, 1,039+ passing tests
 - **React/TypeScript frontend** — tmos13.ai
